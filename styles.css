@@ -1,0 +1,96 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Main container for the to-do list */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f7ebe8;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input container styling */
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Small gap between the input and button */
+}
+
+/* Input field styling */
+#taskInput {
+    flex: 1; /* Make the input take up remaining space */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Add Task button styling */
+#addTaskButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #17881e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#addTaskButton:hover {
+    background-color: #02721b;
+}
+
+/* Task list styling */
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Individual task items */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Remove button styling */
+li button {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+li button:hover {
+    background-color: #c82333;
+}
