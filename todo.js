@@ -12,9 +12,13 @@ function addTask() {
         li.textContent = taskValue;
 
         const removeButton = document.createElement('button'); // Create a remove button
-        removeButton.textContent = 'Remove'; //remove button text
-        removeButton.onclick = function() { //When remove button is clicked
-            taskList.removeChild(li); // Remove the list item from the task list
+        removeButton.textContent = 'Remove'; // Remove button text
+        removeButton.onclick = function() { // When remove button is clicked
+            // Confirmation popup
+            const confirmed = confirm("Are you sure?");
+            if (confirmed) {
+                taskList.removeChild(li); // Remove the list item from the task list if confirmed
+            }
         };
 
         li.appendChild(removeButton); // Add remove button to the list item
