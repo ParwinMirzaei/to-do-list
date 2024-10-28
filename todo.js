@@ -5,13 +5,13 @@ let taskList = document.getElementById('taskList');
 
 // Function to add a new task
 function addTask() {
-    const taskValue = taskInput.value.trim();
+    let taskValue = taskInput.value.trim();
 
     if (taskValue) { // Check if input is not empty
-        const li = document.createElement('li'); 
+        let li = document.createElement('li'); 
         li.textContent = taskValue;
 
-        const removeButton = document.createElement('button'); // Create a remove button
+        let removeButton = document.createElement('button'); // Create a remove button
         removeButton.textContent = 'Remove'; //remove button text
         removeButton.onclick = function() { //When remove button is clicked
             taskList.removeChild(li); // Remove the list item from the task list
