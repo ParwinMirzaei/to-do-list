@@ -1,17 +1,17 @@
 // Select the input field, add button, and task list elements
-let taskInput = document.getElementById('taskInput');
-let addTaskButton = document.getElementById('addTaskButton');
-let taskList = document.getElementById('taskList');
+const taskInput = document.getElementById('taskInput');
+const addTaskButton = document.getElementById('addTaskButton');
+const taskList = document.getElementById('taskList');
 
 // Function to add a new task
 function addTask() {
-    let taskValue = taskInput.value.trim();
+    const taskValue = taskInput.value.trim();
 
     if (taskValue) { // Check if input is not empty
-        let li = document.createElement('li'); 
+        const li = document.createElement('li'); 
         li.textContent = taskValue;
 
-        let removeButton = document.createElement('button'); // Create a remove button
+        const removeButton = document.createElement('button'); // Create a remove button
         removeButton.textContent = 'Remove'; //remove button text
         removeButton.onclick = function() { //When remove button is clicked
             taskList.removeChild(li); // Remove the list item from the task list
